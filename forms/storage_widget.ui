@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>storage_widget</class>
+ <widget class="QWidget" name="storage_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>1104</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Disks</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Luks</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>LVM</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <column>
+          <property name="text">
+           <string>Volumes</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>Unused Physical Volumes</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>26</red>
+             <green>95</green>
+             <blue>180</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>26</red>
+             <green>95</green>
+             <blue>180</blue>
+            </color>
+           </brush>
+          </property>
+          <item>
+           <property name="text">
+            <string>/dev/sde1</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Volume Groups</string>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>38</red>
+             <green>162</green>
+             <blue>105</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="background">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>38</red>
+             <green>162</green>
+             <blue>105</blue>
+            </color>
+           </brush>
+          </property>
+          <item>
+           <property name="text">
+            <string>sysvg</string>
+           </property>
+           <property name="text">
+            <string>Active</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Physical Volumes</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>/dev/sda1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>/dev/sdb1</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Logical Volumes</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>swaplv</string>
+             </property>
+             <property name="text">
+              <string>Active</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>rootlv</string>
+             </property>
+             <property name="text">
+              <string>Active</string>
+             </property>
+            </item>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>datavg</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Physical Volumes</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>/dev/sdc1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>/dev/sdd1</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Logical Volumes</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>datalv</string>
+             </property>
+             <property name="text">
+              <string>Active</string>
+             </property>
+            </item>
+           </item>
+          </item>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>ZFS</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
